@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website showcasing skills, projects, and professional experience.
 
-![Portfolio Preview](images/profile-placeholder.jpg)
-
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
@@ -349,3 +347,4 @@ For questions or support, please:
 **Note**: Remember to replace all placeholder images with your actual photos and update all personal information before deploying to production.
 
 Made with ❤️ by Leo Melo
+
