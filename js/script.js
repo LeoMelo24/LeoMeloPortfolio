@@ -251,6 +251,7 @@ function showNotification(message, type = 'success') {
         position: fixed;
         top: 100px;
         right: 30px;
+        left: 30px;
         background: ${type === 'success' ? '#10b981' : '#ef4444'};
         color: white;
         padding: 1rem 1.5rem;
@@ -259,9 +260,11 @@ function showNotification(message, type = 'success') {
         z-index: 9999;
         animation: slideIn 0.3s ease;
         font-weight: 500;
+        text-align: center;
+        max-width: calc(100% - 60px);
     `;
 
-    // Add animation keyframes
+    // Add animation keyframes and responsive styles
     if (!document.querySelector('#notification-styles')) {
         const style = document.createElement('style');
         style.id = 'notification-styles';
@@ -284,6 +287,14 @@ function showNotification(message, type = 'success') {
                 to {
                     transform: translateX(400px);
                     opacity: 0;
+                }
+            }
+            
+            @media (min-width: 769px) {
+                .notification {
+                    left: auto !important;
+                    max-width: 400px !important;
+                    text-align: left !important;
                 }
             }
         `;
