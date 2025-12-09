@@ -1382,7 +1382,8 @@ body.dark-mode .scroll-top {
     }
     
     .soft-skill-items {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
     }
     
     .awards-grid {
@@ -1402,10 +1403,13 @@ body.dark-mode .contact-form-container,
 body.dark-mode .timeline-content,
 body.dark-mode .soft-skills {
     background: var(--bg-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode .award-card {
     background: var(--bg-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .contact-form input,
