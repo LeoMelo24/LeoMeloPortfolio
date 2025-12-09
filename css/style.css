@@ -961,6 +961,12 @@ body.dark-mode .timeline-date {
     box-shadow: var(--shadow-lg);
 }
 
+body.dark-mode .award-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
 .award-icon {
     width: 80px;
     height: 80px;
