@@ -1298,6 +1298,12 @@ body.dark-mode .scroll-top {
     
     .soft-skill-items {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+    .soft-skill-item {
+        width: 100%;
+        max-width: 180px;
     }
 }
 
@@ -1390,10 +1396,28 @@ body.dark-mode .scroll-top {
     .soft-skill-items {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-sm);
+        justify-items: center;
+    }
+    
+    .soft-skill-item {
+        width: 100%;
+        max-width: 160px;
     }
     
     .awards-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 449px) {
+    .soft-skill-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .soft-skill-item {
+        width: 100%;
+        max-width: 200px;
     }
 }
 
