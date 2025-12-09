@@ -482,7 +482,7 @@ body.dark-mode .hero {
 
 .social-links a:hover {
     background: var(--gradient-2);
-    color: var(--bg-white);
+    color: #ffffff;
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
@@ -780,13 +780,17 @@ body.dark-mode .timeline-date {
 }
 
 .project-link {
-    color: var(--bg-white);
+    color: #ffffff;
     font-size: 2rem;
     transition: var(--transition);
 }
 
 .project-link:hover {
     transform: scale(1.2);
+}
+
+body.dark-mode .project-link {
+    color: #ffffff;
 }
 
 .project-info {
@@ -1209,10 +1213,15 @@ body.dark-mode .footer-social a {
 }
 
 .footer-social a:hover {
-    background: var(--primary-color);
+    background: var(--gradient-2);
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
+}
+
+body.dark-mode .footer-social a:hover {
+    background: var(--gradient-2);
+    color: #ffffff;
 }
 
 /* ===================================
@@ -1469,7 +1478,7 @@ body.dark-mode .social-links a {
 
 body.dark-mode .social-links a:hover {
     background: var(--gradient-2);
-    color: var(--bg-white);
+    color: #ffffff;
 }
 
 /* Smooth transitions for all dark mode elements */

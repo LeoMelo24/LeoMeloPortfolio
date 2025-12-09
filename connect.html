@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with Leo Melo on various social media platforms and professional networks.">
+    <meta name="keywords" content="Leo Melo, Social Media, Contact, Connect">
+    <meta name="author" content="Leo Melo">
+    <title>Connect with Leo Melo | Social Links</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .connect-page {
+            min-height: 100vh;
+            padding: 100px 20px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .connect-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            max-width: 600px;
+        }
+
+        .connect-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .connect-header p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .connect-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+            max-width: 900px;
+            width: 100%;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .connect-card {
+            background: var(--bg-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.125rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+        }
+
+        .connect-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        body.dark-mode .connect-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(37, 99, 235, 0.5);
+        }
+
+        .back-link {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--gradient-2);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .connect-links {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+
+            .connect-header h1 {
+                font-size: 2rem;
+            }
+
+            .connect-header p {
+                font-size: 1rem;
+            }
+
+            .connect-card {
+                min-height: 70px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .connect-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo">Leo<span>Melo</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="connect.html" class="nav-link">Connect</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Connect Page Content -->
+    <div class="connect-page">
+        <div class="connect-header">
+            <h1>Connect With Me</h1>
+            <p>Find me across various platforms. Let's connect and collaborate on exciting projects!</p>
+        </div>
+
+        <div class="connect-links">
+            <a href="https://github.com/LeoMelo24" target="_blank" rel="noopener noreferrer" class="connect-card">
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/leo-melo-dev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                LinkedIn
+            </a>
+            <a href="https://x.com/LeoMeloDev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                X (Twitter)
+            </a>
+            <a href="https://www.instagram.com/leo_melo_dev/" target="_blank" rel="noopener noreferrer" class="connect-card">
+                Instagram
+            </a>
+            <a href="https://www.facebook.com/leomelodev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                Facebook
+            </a>
+            <a href="https://www.youtube.com/@Leo_Melo_Dev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                YouTube
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=355696474110&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="connect-card">
+                WhatsApp
+            </a>
+            <a href="https://www.kaggle.com/leomelodev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                Kaggle
+            </a>
+            <a href="https://stackoverflow.name/leo-melo" target="_blank" rel="noopener noreferrer" class="connect-card">
+                Stack Overflow
+            </a>
+            <a href="https://leetcode.com/u/leomelodev/" target="_blank" rel="noopener noreferrer" class="connect-card">
+                LeetCode
+            </a>
+            <a href="https://www.threads.com/@leo_melo_dev" target="_blank" rel="noopener noreferrer" class="connect-card">
+                Threads
+            </a>
+            <a href="mailto:info@leomelo.dev" class="connect-card">
+                Email
+            </a>
+        </div>
+
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                localStorage.setItem('darkMode', null);
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
