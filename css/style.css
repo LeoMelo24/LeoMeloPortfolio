@@ -1418,6 +1418,13 @@ body.dark-mode .scroll-top {
    Dark Mode Additional Styles
    =================================== */
 
+/* Section backgrounds - darker so cards stand out */
+body.dark-mode .experience,
+body.dark-mode .skills,
+body.dark-mode .contact {
+    background: #141c2e;
+}
+
 /* Timeline Content - EXACT same as light mode, white shadow instead of black */
 body.dark-mode .timeline-content {
     background: var(--bg-light);
@@ -1477,7 +1484,7 @@ body.dark-mode .contact-form-container {
 
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
-    background: var(--bg-white);
+    background: var(--bg-light);
     color: var(--text-primary);
     border-color: var(--border-color);
 }
