@@ -965,12 +965,6 @@ body.dark-mode .project-link {
     box-shadow: var(--shadow-lg);
 }
 
-body.dark-mode .award-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(37, 99, 235, 0.3);
-}
-
 .award-icon {
     width: 80px;
     height: 80px;
@@ -1424,21 +1418,61 @@ body.dark-mode .scroll-top {
    Dark Mode Additional Styles
    =================================== */
 
-body.dark-mode .project-card,
-body.dark-mode .skill-category,
-body.dark-mode .award-card,
-body.dark-mode .contact-item,
-body.dark-mode .contact-form-container,
-body.dark-mode .timeline-content,
-body.dark-mode .soft-skills {
+/* Timeline Content - EXACT same as light mode, white shadow instead of black */
+body.dark-mode .timeline-content {
     background: var(--bg-light);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
 }
 
+/* Project Cards - EXACT same as light mode */
+body.dark-mode .project-card {
+    background: var(--bg-light);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1);
+}
+
+/* Skill Categories - EXACT same as light mode */
+body.dark-mode .skill-category {
+    background: var(--bg-light);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
+
+/* Soft Skills Container - EXACT same as light mode */
+body.dark-mode .soft-skills {
+    background: var(--bg-light);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
+
+/* Award Cards - EXACT same as light mode, NO border, NO scale */
 body.dark-mode .award-card {
     background: var(--bg-light);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Items - EXACT same as light mode */
+body.dark-mode .contact-item {
+    background: var(--bg-light);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .contact-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Form Container - EXACT same as light mode */
+body.dark-mode .contact-form-container {
+    background: var(--bg-light);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .contact-form input,
@@ -1496,5 +1530,5 @@ body.dark-mode .social-links a:hover {
 .skill-item,
 .soft-skill-item,
 .social-links a {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
