@@ -350,6 +350,7 @@ body.dark-mode .btn-secondary:hover {
 
 .dark-mode-toggle:hover {
     background: var(--gradient-2);
+    color: #ffffff;
     transform: scale(1.1);
 }
 
